@@ -1,61 +1,56 @@
-# .NET / Visual Studio / dotnet core
+# Go
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+rclone-sync
+
+# Build directories
 bin/
-obj/
-Release/
-Debug/
-.vs/
-.vscode/
+build/
 
-# Rider
-.idea/
+# Dependency directories
+vendor/
+pkg/
 
-# User-specific files
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
+# Go workspace/local caches
+Godeps/
+*.modcache
+*.o
 
-# Build outputs / logs
+# Rclone / sync logs and configs
+rclone.conf
+rclone-cache.db
+rclone_sync_*.log
 *.log
-*.tlog/
-*.tmp
-*.cache
-*.ilk
-*.pdb
+logs/
 
-# NuGet
-packages/
-*.nupkg
-*.snupkg
-project.lock.json
-project.fragment.lock.json
-.nuget/
-
-# Publish artifacts
-publish/
-*.Publish.xml
-
-# Test results
-TestResults/
-
-# Entity Framework
-Migrations/*.Designer.cs
-
-# User secrets / env
-secrets.json
+# Environment / secrets
 .env
+.env.*
+credentials.json
+*.key
+*.pem
+*.crt
 
-# OS generated files
+# IDEs and editors
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
 Thumbs.db
 ehthumbs.db
-Desktop.ini
-.DS_Store
 
-# Misc / tooling
-*.dbmdl
-*.pidb
-.vscode/
+# Test output
+coverage.out
 
-# (Kept from existing file)
-__pycache__/
-venv/
+# Misc
+# compiled main binary
+main
+main.exe
