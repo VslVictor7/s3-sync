@@ -82,11 +82,11 @@ func sincronizarBucket(bucket string) {
 
 	err := cmd.Run()
 	if err != nil {
-		logMsg(fmt.Sprintf("❌ Erro ao sincronizar %s: %v\n", bucket, err))
+		logMsg(fmt.Sprintf("[ERRO] Erro ao sincronizar %s: %v\n", bucket, err))
 		return
 	}
 
-	logMsg(fmt.Sprintf("✅ %s sincronizado com sucesso.\n", bucket))
+	logMsg(fmt.Sprintf("[OK] %s sincronizado com sucesso.\n", bucket))
 }
 
 func main() {
